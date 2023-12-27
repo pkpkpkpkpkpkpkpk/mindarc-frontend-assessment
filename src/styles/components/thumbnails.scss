@@ -1,0 +1,22 @@
+$thumbnails-gap: 40px;
+
+.thumbnails {
+  margin: $thumbnails-gap 24px;
+  display: grid;
+
+  &__inner {
+    display: grid;
+    gap: $thumbnails-gap 0;
+  }
+
+  @include responsive-desktop {
+    margin: $thumbnails-gap;
+
+    &__inner {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0 $thumbnails-gap;
+      max-width: $page-width;
+      justify-self: center;
+    }
+  }
+}

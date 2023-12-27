@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+//resets
+@import '~normalize.css/normalize';
+
+//settings
+@import './settings/color';
+@import './settings/font';
+@import './settings/page-width';
+@import './settings/transition';
+
+//tools
+@import './tools/responsive';
+
+//elements
+@import './elements/body';
+
+//objects
+@import './objects/button';
+
+//components
+@import './components/accordions';
+@import './components/header';
+@import './components/navigation';
+@import './components/tabs';
+@import './components/thumbnail';
+@import './components/thumbnails';

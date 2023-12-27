@@ -1,0 +1,30 @@
+$thumbnail-radius: 8px;
+
+.thumbnail {
+  padding: 20px;
+  box-shadow: 0 0 2px 2px $thumbnail-border-color;
+  border-radius: $thumbnail-radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    &-inner {
+      display: block;
+      width: 100%;
+      border-radius: $thumbnail-radius;
+    }
+  }
+
+  &__copy {
+    display: block;
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  @include responsive-desktop {
+    &__link {
+      margin-top: auto;
+    }
+  }
+}

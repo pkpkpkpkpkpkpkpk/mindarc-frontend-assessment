@@ -1,0 +1,22 @@
+.button {
+  color: $button-text-color;
+  background: $button-background-color;
+  font-size: $button-font-size;
+  letter-spacing: $button-letter-spacing;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 9px 18px;
+  border: 3px solid $border-color;
+  border-radius: 32px;
+  transition: $transition-default;
+  cursor: pointer;
+
+  &:hover {
+    color: $button-background-color;
+    background: $button-text-color;
+  }
+}

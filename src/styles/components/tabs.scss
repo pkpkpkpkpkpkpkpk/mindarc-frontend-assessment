@@ -1,0 +1,53 @@
+$tabs-padding: 12px;
+
+.tabs {
+  display: none;
+
+  @include responsive-tablet {
+    display: block;
+
+    &__titles {
+      display: flex;
+      max-width: $page-width;
+      margin: 0 auto;
+    }
+    
+    &__title {
+      padding: $tabs-padding $tabs-padding*2;
+      border-right: 1px solid $border-color;
+      font-weight: bold;
+      transition: $transition-default;
+      cursor: pointer;
+
+      &:last-of-type {
+        border-right: none;
+      }
+
+      &.is-active {
+        color: $background-color;
+        background: $text-color;
+      }
+    }
+
+    &__contents {
+      position: relative;
+      max-width: $page-width;
+      margin: 0 auto;
+    }
+  
+    &__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: $tabs-padding $tabs-padding*2;
+      opacity: 0;
+      visibility: hidden;
+      transition: $transition-default;
+  
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+$accordions-padding: 12px;
+
+.accordions {
+  &__accordion {
+    padding: 0 $accordions-padding*2;
+
+    &-inner {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+  
+  &__title {
+    padding: $accordions-padding 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: $transition-default;
+
+    .is-active & {
+      max-height: 500px;
+      opacity: 1;
+      padding: $accordions-padding/2 0 $accordions-padding;
+    }
+
+    p {
+      margin: 0 0 $accordions-padding;
+    }
+
+    ul {
+      margin: 0 0 $accordions-padding;
+    }
+  }
+
+  @include responsive-tablet {
+    display: none;
+  }
+}
