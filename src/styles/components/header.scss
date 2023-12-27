@@ -5,6 +5,8 @@ $header-padding: 8px;
   color: $header-text-color;
 
   &__image {
+    
+    // Dark image overlay
     &:after {
       content: '';
       position: absolute;
