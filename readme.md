@@ -1,6 +1,6 @@
 # Preview instructions
-Run 'yarn', then 'yarn start'.
-* Please note, I've attempted to match the designs exactly in every way, however the only differences are due to the unknown specific font used in the design files, since I've used the standard sans-serif font.
+- Run 'yarn', then 'yarn start'.
+- Please note, I've attempted to match the designs exactly in every way, however the only differences are due to the unknown specific font used in the design files, since I've used the standard sans-serif font.
 
 
 # Code review documentation
@@ -11,8 +11,8 @@ Run 'yarn', then 'yarn start'.
 
 
 # Explain why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana
-The + symbol can concatenate strings, e.g. 'b' + 'a' results in 'ba'.
-However, the + symbol can also convert a string into a number, if the symbol is not preceded by a string like in the first example, e.g. + '7' results in 7.
-If the + symbol is used with the latter approach, but the string doesn't contain a number, then the result will be NaN (not a number).
-If two + symbols are used together, in between two strings, then the strings will be concatenated after the second string is converted into a number, e.g. 'b' + + 'a' results in 'bNaN'.
-Therefore, 'b' + 'a' + + 'a' + 'a' will result in 'baNaNa', and if converted to lower case, the result is 'banana'.
+- The + symbol can concatenate strings, e.g. 'b' + 'a' results in 'ba'.
+- However, the + symbol can also convert a string into a number, if the symbol is not preceded by a string like in the first example, e.g. + '7' results in 7.
+- If the + symbol is used with the latter approach, but the string doesn't contain a number, then the result will be NaN (not a number).
+- If two + symbols are used together, in between two strings, then the strings will be concatenated after the second string is converted into a number, e.g. 'b' + + 'a' results in 'bNaN'.
+- Therefore, 'b' + 'a' + + 'a' + 'a' will result in 'baNaNa', and if converted to lower case, the result is 'banana'.
